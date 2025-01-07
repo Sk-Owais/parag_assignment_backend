@@ -5,6 +5,9 @@ module.exports = {
     DATA_VALIDATION: "Api data validation failed",
     SHOP_NOT_FOUND: "Cannot find shop with respect to this domain",
     API_NOT_FOUND: "Forget to specific route,please check the route",
+    CHECK_CUSTOMER_ACCESS_TOKEN_ERROR: "Error while validating access token",
+    CHECK_CUSTOMER_ACCESS_TOKEN_INVALID: "Invalid access token",
+    CHECK_CUSTOMER_ACCESS_TOKEN_NOT_IN_DATABASE: "Customer access token does not exist in our end",
   },
   SUBSCRIPTION:{
     SUBSCRIPTION_CREATED_SUCCESS:"Subcription created succesfully",

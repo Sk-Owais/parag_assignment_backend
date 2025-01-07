@@ -40,6 +40,7 @@ const createSubscriptionController = async (req, res) => {
 
     const { code, response } = await createSubscriptionService({
       ...data,
+      ...req.headers,
     });
     return res.status(code).json(response);
   } catch (error) {
@@ -69,6 +70,7 @@ const updateSubscriptionController = async (req, res) => {
     const { code, response } = await updateSubscriptionService({
       ...data,
       ...req.params,
+      ...req.headers,
     });
     return res.status(code).json(response);
   } catch (error) {
@@ -80,6 +82,7 @@ const deleteSubscriptionController = async (req, res) => {
   try {
     const { code, response } = await deleteSubscriptionService({
       ...req.params,
+      ...req.headers,
     });
     return res.status(code).json(response);
   } catch (error) {
@@ -90,6 +93,7 @@ const getAllSubscriptionController = async (req, res) => {
   try {
     const { code, response } = await getAllSubscriptionService({
       ...req.params,
+      ...req.headers,
     });
     return res.status(code).json(response);
   } catch (error) {
