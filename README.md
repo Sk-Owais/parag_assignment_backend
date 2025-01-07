@@ -1,2 +1,2 @@
 # parag_assignment_backend
-Note:- env files is inlcude for refernces purpose only
+Note:- .env and certs files is included for refernces purpose only
