@@ -15,6 +15,7 @@ const createUserController = async (req, res) => {
       .object({
         customer_name: zod.string(),
         customer_email: zod.string(),
+        customer_password: zod.string(),
       })
       .safeParse(req.body);
 

@@ -18,11 +18,12 @@ const {
 const { generateJwtToken } = require("../helpers/commonHelperFunctions");
 const{queryOptions}=require('../helpers/databaseHelperFunctions')
 async function createUserService(data) {
-  const { customer_name, customer_email } = data;
+  const { customer_name, customer_email, customer_password } = data;
   try {
     const createCustomer = await customerModel.create({
       customer_name,
       customer_email,
+      customer_password
     });
     const accessToken = await generateJwtToken(
       {

@@ -10,6 +10,14 @@ module.exports = function(sequelize, DataTypes) {
     customer_name: {
       type: DataTypes.STRING(50),
       allowNull: false
+    },
+    customer_email: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    customer_password: {
+      type: DataTypes.STRING(50),
+      allowNull: false
     }
   }, {
     sequelize,
